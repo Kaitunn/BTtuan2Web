@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Đăng Nhập</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f2f5;
+      display: flex;
+      justify-content: center; /* canh giữa ngang */
+      align-items: center;     /* canh giữa dọc */
+      height: 100vh;           /* full màn hình */
+      margin: 0;
+    }
+    .login-box {
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      width: 300px;
+      text-align: center;
+    }
+    h2 {
+      margin-bottom: 20px;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background: #007bff;
+      color: white;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <h2>Đăng Nhập</h2>
+    <form>
+      <input type="text" placeholder="Tên đăng nhập" required>
+      <input type="password" placeholder="Mật khẩu" required>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+</body>
+</html>

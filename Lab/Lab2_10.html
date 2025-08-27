@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio Cá Nhân</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+    }
+    img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+    }
+    h1 {
+      margin: 10px 0;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* chia 3 cột */
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .project {
+      background: #fff;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+    .project:hover {
+      background: #eaf3ff; /* đổi màu khi hover */
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <!-- Ảnh đại diện -->
+  <img src="../Img/Phần 1.jpg" alt="Ảnh đại diện">
+  <h1>Đặng Tuấn Khải</h1>
+  <p>Sinh viên CNTT - Yêu thích lập trình Web</p>
+
+  <!-- Danh sách dự án -->
+  <div class="projects">
+    <div class="project">
+      <h3>Website Bán Sách</h3>
+      <p>Trang web liệt kê sản phẩm và giá cả.</p>
+    </div>
+    <div class="project">
+      <h3>Portfolio Cá Nhân</h3>
+      <p>Trang giới thiệu bản thân và các dự án.</p>
+    </div>
+    <div class="project">
+      <h3>To do App</h3>
+      <p>Ứng dụng quản lý công việc đơn giản.</p>
+    </div>
+  </div>
+</body>
+</html>
