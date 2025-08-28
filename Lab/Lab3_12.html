@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Khảo Sát Ý Kiến</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      display: flex;
+      justify-content: center;
+      padding: 30px;
+    }
+    form {
+      background: #fff;
+      padding: 20px 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      width: 400px;
+    }
+    h2 {
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+    }
+    .options {
+      margin-left: 10px;
+    }
+    .options label {
+      font-weight: normal;
+      display: block;
+      margin-bottom: 5px;
+    }
+    textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      resize: vertical;
+      min-height: 80px;
+    }
+    button {
+      margin-top: 10px;
+      padding: 10px;
+      width: 100%;
+      border: none;
+      border-radius: 6px;
+      background: #007bff;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <h2>Khảo Sát Ý Kiến</h2>
+
+    <!-- Radio -->
+    <div class="form-group">
+      <label>Bạn có hài lòng với dịch vụ của chúng tôi không?</label>
+      <div class="options">
+        <label><input type="radio" name="hailong" value="co"> Có</label>
+        <label><input type="radio" name="hailong" value="khong"> Không</label>
+      </div>
+    </div>
+
+    <!-- Checkbox -->
+    <div class="form-group">
+      <label>Bạn thích những tính năng nào?</label>
+      <div class="options">
+        <label><input type="checkbox" name="tinh_nang" value="gia"> Giá cả hợp lý</label>
+        <label><input type="checkbox" name="tinh_nang" value="chatluong"> Chất lượng tốt</label>
+        <label><input type="checkbox" name="tinh_nang" value="hotro"> Hỗ trợ nhanh</label>
+        <label><input type="checkbox" name="tinh_nang" value="giaodien"> Giao diện đẹp</label>
+      </div>
+    </div>
+
+    <!-- Textarea -->
+    <div class="form-group">
+      <label>Ý kiến đóng góp thêm:</label>
+      <textarea placeholder="Nhập ý kiến của bạn..."></textarea>
+    </div>
+
+    <button type="submit">Gửi khảo sát</button>
+  </form>
+</body>
+</html>
