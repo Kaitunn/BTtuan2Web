@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Thanh Toán</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f9fc;
+      display: flex;
+      justify-content: center;
+      padding: 30px;
+    }
+    form {
+      background: #fff;
+      padding: 20px 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 400px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-sizing: border-box;
+    }
+    .payment-options {
+      margin-top: 8px;
+    }
+    .payment-options label {
+      display: block;
+      font-weight: normal;
+      margin-bottom: 5px;
+    }
+    button {
+      margin-top: 10px;
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      background: #28a745;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #218838;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <h2>Thanh Toán Đơn Hàng</h2>
+
+    <div class="form-group">
+      <label for="ten">Họ và tên:</label>
+      <input type="text" id="ten" name="ten" required>
+    </div>
+
+    <div class="form-group">
+      <label for="diachi">Địa chỉ giao hàng:</label>
+      <textarea id="diachi" name="diachi" rows="3" required></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="form-group">
+      <label for="sdt">Số điện thoại:</label>
+      <input type="tel" id="sdt" name="sdt" required>
+    </div>
+
+    <div class="form-group">
+      <label>Phương thức thanh toán:</label>
+      <div class="payment-options">
+        <label><input type="radio" name="payment" value="cod" checked> Thanh toán khi nhận hàng (COD)</label>
+        <label><input type="radio" name="payment" value="bank"> Chuyển khoản ngân hàng</label>
+        <label><input type="radio" name="payment" value="momo"> Ví điện tử (Momo/ZaloPay)</label>
+        <label><input type="radio" name="payment" value="card"> Thẻ tín dụng/Ghi nợ</label>
+      </div>
+    </div>
+
+    <button type="submit">Xác nhận thanh toán</button>
+  </form>
+</body>
+</html>
