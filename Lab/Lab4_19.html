@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Lịch Sự Kiện</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #2367ce;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .event {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 10px 15px;
+      margin-bottom: 12px;
+      background: #fff;
+    }
+    .event h3 {
+      margin: 5px 0;
+      color: #e50b0b;
+    }
+    .event p {
+      margin: 3px 0;
+      color: #555;
+    }
+    /* màu xen kẽ theo thứ tự */
+    .event:nth-child(odd) { background: #e8f0ff; }
+    .event:nth-child(even) { background: #e8ffef; }
+    /* sự kiện gần nhất highlight */
+    .upcoming {
+      border: 2px solid orange;
+      background: #fff3cd;
+    }
+  </style>
+</head>
+<body>
+  <h1>Lịch Sự Kiện</h1>
+
+  <div class="event upcoming">
+    <h3>29/08/2025 - Khai mạc Tuần lễ Công nghệ</h3>
+    <p>09:00 • Trung tâm Hội nghị TP</p>
+  </div>
+
+  <div class="event">
+    <h3>30/08/2025 - Workshop Thiết kế UI/UX</h3>
+    <p>14:00 • Phòng A2</p>
+  </div>
+
+  <div class="event">
+    <h3>31/08/2025 - Talkshow Khởi nghiệp AI</h3>
+    <p>13:30 • Hội trường B1</p>
+  </div>
+
+  <div class="event">
+    <h3>01/09/2025 - Triển lãm sản phẩm sinh viên</h3>
+    <p>10:00 • Sảnh C</p>
+  </div>
+</body>
+</html>
