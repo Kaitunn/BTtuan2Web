@@ -1,225 +1,187 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <title>YOKO'S KITCHEN</title>
+  <title>Yoko's Kitchen</title>
   <style>
-    * {
+    body {
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: Georgia, "Times New Roman", serif;
-      color: #333;
       background: #fff;
     }
     .container {
-      width: 960px;
-      margin: 0 auto;
+      width: 900px;
+      margin: auto;
     }
-    /* ===== HEADER ===== */
+
+    /* Header */
     header {
-      background: url("img/background.png");
       display: flex;
       align-items: center;
+      background: url('background.png');
       padding: 20px;
-      color: white;
     }
     header img {
-      width: 60px;
+      width: 80px;
       margin-right: 15px;
     }
     header h1 {
-      font-size: 28px;
+      margin: 0;
+      font-size: 24px;
     }
     header p {
+      margin: 0;
       font-size: 14px;
+      color: #333;
     }
 
-    /* ===== MENU ===== */
+    /* Nav */
     nav {
-      background: #b0aeb0;
+      background: #999;
+      padding: 10px;
     }
-    nav ul {
-      list-style: none;
+    nav a {
+      color: #fff;
+      margin-right: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Layout 2 cột */
+    main {
       display: flex;
+      margin: 20px 0;
     }
-    nav ul li {
+    section {
+      flex: 2;
+      margin-right: 20px;
+    }
+    aside {
       flex: 1;
     }
-    nav ul li a {
-      display: block;
-      text-align: center;
-      padding: 10px;
-      color: #fff;
-      text-decoration: none;
-      font-family: Arial, sans-serif;
-      text-transform: lowercase;
-    }
-    
-    nav {
-        background-color: rgb(175, 175, 163);
-        padding: 10px;
-        height: 30px;
-            
-        }
 
-    nav a {
-        color: #fff;
-        margin: 0 10px;
-        text-decoration: none;
-        }
-
-    /* ===== SECTION ===== */
-    section {
-      width: 70%;
-      float: left;
-      padding: 20px 10px 20px 0;
-    }
-    section article {
+    /* Bài viết */
+    article {
       display: flex;
-      margin-bottom: 25px;
+      margin-bottom: 20px;
     }
-    section article img {
-      width: 220px;
-      height: auto;
+    article img {
+      width: 150px;
+      height: 100px;
+      object-fit: cover;
       margin-right: 15px;
       border: 1px solid #ccc;
     }
-    section article h2 {
-      font-size: 20px;
-      margin-bottom: 5px;
-      font-weight: bold;
+    article h2 {
+      margin: 0;
+      font-size: 18px;
     }
-    section article h3 {
+    article h3 {
+      margin: 5px 0;
+      color: crimson;
       font-size: 14px;
-      color: #c33;
-      margin-bottom: 10px;
     }
-    section article p.caption {
-      font-size: 13px;
-      color: #666;
-      margin-top: 5px;
+    article p {
+      margin: 0;
+      font-size: 14px;
+      color: #333;
     }
 
-    /* ===== ASIDE ===== */
-    aside {
-      width: 28%;
-      float: right;
-      padding: 20px;
+    /* Sidebar */
+    aside h3 {
+      color: crimson;
+      margin-top: 0;
     }
-    aside h1 {
-      font-size: 18px;
-      color: #c33;
-      margin-bottom: 10px;
+    aside a {
+      display: block;
+      color: crimson;
+      text-decoration: none;
+      margin: 5px 0;
     }
-    aside ul {
-      list-style: none;
-      margin-bottom: 20px;
-    }
-    aside ul li {
-      margin-bottom: 8px;
-    }
-    aside ul li {
-      color: #c33;
+    aside a:hover {
+      text-decoration: underline;
     }
     aside p {
       font-size: 14px;
-      line-height: 1.5;
+      color: #333;
     }
 
-    /* ===== FOOTER ===== */
+    /* Footer */
     footer {
-        padding: 5px;
-        background-image: url(img/background.png);
-        color: #fff;
-        clear: both;
-        }
+      background: #ccc;
+      padding: 10px;
+      text-align: center;
+      font-size: 13px;
+    }
   </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <table border="0">
-                <tr>
-                    <td>
-                        <img src="../Img/logo.png" alt="" style="width: 60px;">
-                    </td>
-                    <td>
-                        <h1>YOKO'S KITCHEN</h1> 
-                        <p>JAPANESE COOKING CLASSES</p>
-                    </td>
-                </tr>
-            </table>
-            </header>
-           
-        <nav>
-            <a href="#">home</a>
-            <a href="#">classes</a>
-            <a href="#">catering</a>
-            <a href="#">about</a>
-            <a href="#">contact</a>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <img src="../Img/logo.png" alt="Logo">
+      <div>
+        <h1>YOKO'S KITCHEN</h1>
+        <p>JAPANESE COOKING CLASSES</p>
+      </div>
+    </header>
 
-        </nav>
+    <!-- Nav -->
+    <nav>
+      <a href="#">home</a>
+      <a href="#">classes</a>
+      <a href="#">catering</a>
+      <a href="#">about</a>
+      <a href="#">contact</a>
+    </nav>
 
-        <section>
-            <article>
-                <table border="0">
-                    <tr>
-                        <td style="width: 35%;">
-                            <img src="../Img/teriyaki.jpg" alt="" style="height: 80%;">
-                            <br> Bok Choi
-                        </td>
-                        <td style="width: 65%; padding-left: 10px; text-align: left;">
-                            <h2>Japanese Vegetarian</h2>
-                            <h3>Five week course in London</h3>
-                            A five week introduction to traditional Japanese vegetarian meals,
-                            teaching you a selection of rice and noodle dishes.
-                        </td>
-                    </tr>
-                </table>
-            </article>
-            <article>
-                   <div><img src="../Img/teriyaki.jpg" alt="" style="height: 80%;">
-                       <br>Teriyaki Sauce
-                   </div>
-                <div>
-                    <h2>Sauces Masterclass</h2>
-                    <h3>One day workshop</h3>
-                    An intensive one-day course looking at how to create the most delicious
-                    sauces for use in a range of Japanese cookery.
-                </div>
-            </article>
-        </section>
+    <!-- Nội dung chính -->
+    <main>
+      <!-- Bên trái -->
+      <section>
+        <article>
+          <img src="bok-choi.jpg" alt="Bok Choi">
+          <div>
+            <h2>Japanese Vegetarian</h2>
+            <h3>Five week course in London</h3>
+            <p>A five week introduction to traditional Japanese vegetarian meals, teaching you a selection of rice and noodle dishes.</p>
+          </div>
+        </article>
 
-        <aside>
-            <article>
-                <h1>Popular Recipies</h1>
-                <ul>
-                    <li>Yakitori (grilled chicken)</li>
-                    <li>Tsukune (minced chicken patties)</li>
-                    <li> Okonomiyaki (savory pancakes)</li>
-                    <li>Mizutaki (chicken stew)</li>
-                </ul>
-            </article>
-            <article>
-                <h1>Contact</h1>
-                <p>
-                    Yoko's Kitchen. <br>
-                27 Redchurch Street <br>
-                Shoreditch <br>
-                London E2 7DP <br>
+        <article>
+          <img src="../Img/teriyaki.jpg" alt="Teriyaki Sauce">
+          <div>
+            <h2>Sauces Masterclass</h2>
+            <h3>One day workshop</h3>
+            <p>An intensive one-day course looking at how to create the most delicious sauces for use in a range of Japanese cookery.</p>
+          </div>
+        </article>
+      </section>
 
-                </p>
-            </article>
-        </aside>    
+      <!-- Bên phải -->
+      <aside>
+        <h3>Popular Recipes</h3>
+        <a href="#">Yakitori (grilled chicken)</a>
+        <a href="#">Tsukune (minced chicken patties)</a>
+        <a href="#">Okonomiyaki (savory pancakes)</a>
+        <a href="#">Mizutaki (chicken stew)</a>
 
-        <footer>
-            &#169; 2011 Yoko's Kitchen        
-        </footer>
-    </div>
+        <h3>Contact</h3>
+        <p>Yoko's Kitchen<br>
+        27 Redchurch Street<br>
+        Shoreditch<br>
+        London E2 7DP</p>
+      </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      © 2011 Yoko's Kitchen
+    </footer>
+  </div>
 </body>
-
 </html>
-
